@@ -1,0 +1,12 @@
+# generated testbench and test files
+VHDL/script/list.lst
+VHDL/script/LinearInterpolator_tb.vhd
+VHDL/tb/LinearInterpolator_tb.vhd
+
+# modelsim folder contents
+VHDL/modelsim/*
+!VHDL/modelsim/.gitkeep
+
+# vivado folder contents
+VHDL/vivado/*
+!VHDL/vivado/.gitkeep
