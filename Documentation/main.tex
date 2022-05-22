@@ -1,0 +1,35 @@
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[parfill]{parskip}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={160mm,247mm},
+ left=25mm,
+ top=25mm,
+ }
+
+\title{\textbf{Titolo}}
+\author{Matteo Abaterusso}
+\date{\today}
+
+\begin{document}
+
+\include{chapter/Header}
+
+\newpage
+\tableofcontents
+
+\include{chapter/Introduction}
+\include{chapter/ArchitectureDescription}
+\include{chapter/VHDL}
+\include{chapter/TestPlan}
+\include{chapter/Vivado}
+\include{chapter/Conclusions}
+
+\end{document}

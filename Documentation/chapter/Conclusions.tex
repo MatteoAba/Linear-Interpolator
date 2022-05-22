@@ -1,0 +1,11 @@
+\section{Conclusions}
+
+The \textbf{Linear Interpolator} is a circuit that, received two consecutive signals, provides in output the $L$ (factor of interpolation) signals that represent the linear interpolation between them.
+
+Considering a circuit with a fixed L, there are many possible implementations, each of them allowing to get a different \textbf{trade-off} between \textbf{performance}, \textbf{complexity} and \textbf{precision}.
+
+\begin{itemize}
+    \item If an \textbf{high level of precision} is needed, the interpolation formula should not have any oversimplifications, so is necessary to implement multiplication and division modules (high complexity).
+    \item If an \textbf{high speed} or \textbf{high power efficiency} is needed, a multiple clock domain should be implemented, obtaining an higher level of complexity.
+    \item If a \textbf{low complexity} is needed, the proposed implementation should be chosen. In fact, it allows to implements the entire computation using unsigned signals and simple Ripple Carry Adders.
+\end{itemize}
