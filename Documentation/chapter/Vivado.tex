@@ -158,4 +158,34 @@ The Implementation's Warnings are the following:
     \label{fig:IW}
 \end{figure}
 
-All of them are Vivado internal warnings, that can be ignored.
+All of the errors refer to vivado's impossibility to \textbf{place} the \textbf{clock source}. 
+
+
+With engineer Nannipieri we verified that at the end of the implementation in check timing the \textbf{no\_clock count} was \textbf{zero}:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/Chapter5/NoClockCheck.png}
+    \caption{Check Timing Report}
+    \label{fig:NCC}
+\end{figure}
+
+So we concluded that these are \textbf{internal vivado warnings}, which in the case of using the interpolator within a more complex design should disappear.
+
+Having input and output of the circuit at only 16 bits, is possible to do a test with an implementation \textbf{not} in \textbf{out of context mode} (thus letting vivado do \textbf{automatic routing}).
+
+As can be seen in the figures \ref{fig:WR3} and \ref{fig:TR3}, the warnings are gone and the timings are similar to the previous implementation:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/Chapter5/ImplementationAutomatic.png}
+    \caption{Warnings Report}
+    \label{fig:WR3}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{img/Chapter5/ImplementationAutomaticResults.png}
+    \caption{Timing Report}
+    \label{fig:TR3}
+\end{figure}
