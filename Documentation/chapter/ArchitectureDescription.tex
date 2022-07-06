@@ -104,7 +104,7 @@ The network described above looks like this:
     \label{fig:InputNetwork1}
 \end{figure}
 
-In order to implement the \textbf{synchronization problem solution} (section 2.2.1) is necessary to set the registers enabler port to one every four clock cycle. To do that a \textbf{2 bit counter} has been implemented, the count from 0 to 3, increasing its value of one \textbf{every clock cycle}. Assuming that a new signal arrives when the output of counter is 0, the enabler has to be one in the previous cycle, so when the counter output is 3 ($|11|_2$ in base 2). Therefore, the counter output goes in input to an \textbf{AND port}, whose output becomes the \textbf{enabler line} for the two input registers.
+In order to implement the \textbf{synchronization problem solution} (section 2.2.1) is necessary to set the registers enabler port to one every four clock cycle. To do that a \textbf{2 bit counter} has been implemented; it counts from 0 to 3, increasing its value of one \textbf{every clock cycle}. Assuming that a new signal arrives when the output of counter is 0, the enabler has to be one in the previous cycle, so when the counter output is 3 ($|11|_2$ in base 2). Therefore, the counter output goes in input to an \textbf{AND port}, whose output becomes the \textbf{enabler line} for the two input registers.
 
 The resulting network is as follows:
 
@@ -115,7 +115,7 @@ The resulting network is as follows:
     \label{fig:InputNetwork2}
 \end{figure}
 
-So \textbf{one Ripple Carry Adder} and \textbf{three Registers} are needed.
+So \textbf{one Ripple Carry Adder}, \textbf{three Registers} and \textbf{an And Port} are needed.
 
 \subsection{Output Network}
 

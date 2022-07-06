@@ -86,7 +86,7 @@ The \textbf{general consumption} is lower than  $100mW$. Moreover, it's clear th
 
 \subsection{Implementation analysis}
 
-In this phase the \textbf{place and route} will be performed by Vivado, with some useful \textbf{optimizations}. In general this phase is preceded by the \textbf{I/O Planning}, in which the I/O Physical Ports of the FPGA are associated with the I/O Ports of the Elaborated Design. But the FPGA has not enough ports to implement an input and an output of 16 bit. So the implementation will be performed in \textit{Out of Context Mode}, that allows to do implementation without I/O Planning. 
+In this phase the \textbf{place and route} will be performed by Vivado, with some useful \textbf{optimizations}. In general this phase is preceded by the \textbf{I/O Planning}, in which the I/O Physical Ports of the FPGA are associated with the I/O Ports of the Elaborated Design. But the FPGA has not enough phisical ports to implement an input and an output of 16 bit. So the implementation will be performed in \textit{Out of Context Mode}, that allows to do implementation without I/O Planning. 
 
 The implementation result is the following:
 
@@ -158,7 +158,7 @@ The Implementation's Warnings are the following:
     \label{fig:IW}
 \end{figure}
 
-All of the errors refer to vivado's impossibility to \textbf{place} the \textbf{clock source}. 
+All of the errors refer to Vivado's impossibility to \textbf{place} the \textbf{clock source}. 
 
 
 With engineer Nannipieri we verified that at the end of the implementation in check timing the \textbf{no\_clock count} was \textbf{zero}:

@@ -91,7 +91,7 @@ Even in this case, the correctness of the results have been tested by a visual a
     \label{fig:LIStaticTest}
 \end{figure}
 
-In this test is possible to see that when a new signals arrives, the first of the four output signals is provided after two clock cycles. This delay is caused by the input registers and the output register that are between the input and the output of the network. 
+In this test is possible to see that when a new signals arrives, the first of the four output signals is provided \textbf{after two clock cycles}. This delay is caused by the input registers and the output register that are between the input and the output of the network. 
 
 \subsection{Linear Interpolator Dynamic Test}
 
@@ -143,7 +143,7 @@ Instead, below there is an example of \textit{TabulatedResults.txt}:
 
 The purpose of this system is to be able to test the circuit automatically and with a very large number of input signals.
 
-For this purpose it is necessary to export from ModelSim the results obtained as output signals in a list.lst file, and run a second script (\textit{Results\_validator.py}) that compares the file exported from ModelSim with the results computed by the first script.
+For this purpose it is necessary to export from ModelSim the results obtained as \textbf{output signals} in a list.lst file, and run a second script (\textit{Results\_validator.py}) that compares the file exported from ModelSim with the results computed by the first script.
 
 \begin{figure}[H]
     \centering
